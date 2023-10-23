@@ -1,0 +1,9 @@
+
+my_number = int(input())
+
+while my_number > 0:
+    print(my_number % 2, end='') 
+    my_number = my_number // 2
+print()
+
+#output: a string of 1's and 0's representing the integer in reverse binary.
