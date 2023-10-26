@@ -1,0 +1,19 @@
+# get the name input from the user
+your_name = input()
+
+#split into individual names with space as separator
+name_tokens = your_name.split(" ")
+
+# remove the last item from name_tokens and assign to last_name variable
+last_name = name_tokens.pop(-1)
+
+# create final_name variable and assigne the formatted version of last_name to it
+final_name = "{}, ".format(last_name)
+
+# for each name remaining in name_tokens, if it isn't blank, add the zero index of each to final_name
+for name in name_tokens:
+    if name.strip() != "":
+        final_name += "{}.".format(name[0])
+
+#print final name
+print(final_name)   
